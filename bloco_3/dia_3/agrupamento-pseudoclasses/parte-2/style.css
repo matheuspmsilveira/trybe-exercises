@@ -3,21 +3,21 @@ div:hover {
 }
 
 .primaria {
-
+    color: red;
 }
 
 .secundaria {
-
+    color: orange;
 }
 
 .complementar {
-
+    color: green;
 }
 
 .escura {
-
+    color: darkred;
 }
 
 .clara {
-    
+    color: rgb(250, 100, 100);
 }
