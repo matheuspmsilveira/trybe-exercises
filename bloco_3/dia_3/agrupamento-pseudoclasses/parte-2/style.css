@@ -1,23 +1,46 @@
+body {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
 div:hover {
     border: solid black;
 }
 
 .primaria {
-    color: red;
+    background-color: rgb(255, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
 }
 
 .secundaria {
-    color: orange;
+    background-color: rgb(255, 72, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
 }
 
 .complementar {
-    color: green;
+    background-color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
 }
 
 .escura {
-    color: darkred;
+    background-color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
 }
 
 .clara {
-    color: rgb(250, 100, 100);
+    background-color: rgb(250, 100, 100);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
 }
