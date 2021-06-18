@@ -1,0 +1,60 @@
+ol li{
+    background-color: yellow;
+}
+
+ol li.par {
+    color: green;
+}
+
+ol li.impar {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
+
+h1 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.primeiras-3 {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:hover[href="https://pt.stackoverflow.com/"] {
+    color: orangered;
+} 
+
+a:hover[href="https://www.w3schools.com/"] {
+    color: green;
+}
+
+a:hover[href="https://developer.mozilla.org/pt-BR/"] {
+    color: black;
+}
+
+a:hover[href="https://devdocs.io/"] {
+    color: yellow;
+}
+
+a:hover[href="https://app.betrybe.com/"] {
+    color: green;
+}
