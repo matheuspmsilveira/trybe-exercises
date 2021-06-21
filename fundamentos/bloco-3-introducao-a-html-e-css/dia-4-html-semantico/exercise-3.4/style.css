@@ -4,3 +4,77 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.header {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 25px;
+    color:purple;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+}
+
+.article {
+    width: 70%;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.vision {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+.vision p {
+    text-align: left;
+}
+
+#rainbow {
+    width: 250px;
+    height: 250px;
+}
+
+.punch {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+.punch p {
+    text-align: left;
+}
+
+#stomatopoda-punch {
+    width: 250px;
+    height: 250px;
+}
+
+.more-information {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+.more-information p {
+    text-align: left;
+}
+
+#stomatopoda-image {
+    width: 250px;
+    height: 250px;
+}
+
+.references li {
+    list-style-type: none;
+}
