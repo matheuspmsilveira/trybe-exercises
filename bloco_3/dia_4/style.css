@@ -1,6 +1,14 @@
+body {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
   }
+
+li{
+    list-style-type: none;
+}
 
 .first {
     background-color: rgb(235, 200, 84);
@@ -8,7 +16,9 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
-  }
+    display: block;
+    margin-left: 45%;
+}
 
 .second {
     background-color: rgb(219, 219, 219);
@@ -16,7 +26,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-  }
+    display: inline-block;
+}
 
 .third {
     background-color: rgb(170, 142, 106);
@@ -24,4 +35,11 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-  }
+    display: inline-block;
+}
+
+.premiacao li {
+    display: inline;
+}
+
+
