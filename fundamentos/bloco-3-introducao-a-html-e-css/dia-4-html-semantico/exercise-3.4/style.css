@@ -1,0 +1,96 @@
+body {
+    background-image: url("rainbow-background.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 25px;
+    color:purple;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+}
+
+.article {
+    width: 70%;
+    height: 61%;
+    display: inline-block;
+    margin: 1%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.vision {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+.vision p {
+    text-align: left;
+}
+
+#rainbow {
+    width: 100%;
+    height: 100%;
+}
+
+.punch {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+.punch p {
+    text-align: left;
+}
+
+#stomatopoda-punch {
+    width: 100%;
+    height: 100%;
+}
+
+.more-information {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+.more-information p {
+    text-align: left;
+}
+
+#stomatopoda-image {
+    width: 100%;
+    height: 100%;
+}
+
+.references li {
+    list-style-type: none;
+}
+
+.aside {
+    width: 26%;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+    background-color: pink;
+    padding-bottom: 60%;
+}
+
+.aside h2 {
+    font-size: 20px;
+}
