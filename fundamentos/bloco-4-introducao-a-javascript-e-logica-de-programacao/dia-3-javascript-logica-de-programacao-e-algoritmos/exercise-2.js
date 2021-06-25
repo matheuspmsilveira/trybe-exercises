@@ -1,8 +1,8 @@
 let n = 5;
 let asterisco = "*";
-let numberAsteriscos = "";
+let linhaAdicionarAsterisco = "";
 
 for (let index = 0; index < n; index += 1) {
-  numberAsteriscos += asterisco;
-  console.log(numberAsteriscos);
+  linhaAdicionarAsterisco += asterisco;
+  console.log(linhaAdicionarAsterisco);
 }
