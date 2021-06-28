@@ -1,4 +1,4 @@
-function palindromeVerify (word) {
+function palindromeVerify(word) {
   let inverseWord = ""
   for (let index = word.length - 1; index >= 0; index -= 1) {
     inverseWord += word[index];
