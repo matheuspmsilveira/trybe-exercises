@@ -6,6 +6,6 @@ let info = {
 
 console.log("Bem-vinda, " + info.personagem);
 
-info['recorente'] = true;
+info['recorente'] = 'Sim';
 
 console.log(info);
