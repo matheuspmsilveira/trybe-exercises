@@ -42,11 +42,10 @@
       </section>
     </main>
     <script>
-      function changeTagText(tag, text) {
-        document.getElementsByTagName(tag)[0].innerText = text;
+      function changeTagText(tag, index, text) {
+        document.getElementsByTagName(tag)[index].innerText = text;
       }
-      changeTagText('p', 'Muito feliz e um Dev bomzão!');
-
+      changeTagText('p', 0, 'Muito feliz e um Dev bomzão!');
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
