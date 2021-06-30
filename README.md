@@ -17,25 +17,33 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 2-2: _Entendendo os comandos_
 - [X] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdção - HTML & CSS :hourglass_flowing_sand:
+##### Bloco 3: Introdção - HTML & CSS :white_check_mark: 
 
 - [X] 3-1: _HTML & CSS - Estruturas de página_
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [ ] 3-5: _[Projeto - HTML & CSS]()_
+- [X] 3-5: _[Projeto - HTML & CSS]()_
 
-##### Bloco 4: Introdução - JavaScript :hourglass_flowing_sand:
+##### Bloco 4: Introdução - JavaScript :white_check_mark:
 
+<<<<<<< HEAD
 - [ ] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
 - [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto - Playground Functions]()_
+=======
+- [X] 4-1: _JavaScript - Primeiros passos_
+- [X] 4-2: _JavaScript - Array e loop For_
+- [X] 4-3: _JavaScript - LÃ³gica de Programação e Algoritmos_
+- [X] 4-4: _JavaScript - Objetos e funções_
+- [X] 4-5: _[Projeto - Playground Functions]()_
+>>>>>>> 810efef087dad7ce2be3f1a6e8bc1c2363321311
 
 ##### Bloco 5: Introdução - JavaScript - Projetos :hourglass_flowing_sand:
 
-- [ ] 5-1: _JavaScript - DOM e seletores_
+- [X] 5-1: _JavaScript - DOM e seletores_
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
@@ -118,7 +126,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 16-1: _Introdção ao Redux_
 - [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - PrÃ¡tica_
+- [ ] 16-3: _React com Redux - Prática_
 - [ ] 16-4: _React com Redux - Parte 2_
 - [ ] 16-5: _Testes síncronos com React-Redux_
 - [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
@@ -221,7 +229,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 32-1: _Arquitetura - Princípios SOLID_
 - [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
 - [ ] 32-3: _Arquitetura de Software - DDD_
-- [ ] 32-4: _Boas prÃ¡ticas na escrita de testes_
+- [ ] 32-4: _Boas práticas na escrita de testes_
 - [ ] 32-3: _[Projeto - API de Blogs]()_
 
 ##### Bloco 33: Sockets :hourglass_flowing_sand:
@@ -234,9 +242,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 34-1: _[Projeto - Trybeer V2]()_
 
-## CiÃªncia da Computação :hourglass_flowing_sand:
+## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 35: Introdção - CiÃªncia da Computação :hourglass_flowing_sand:
+##### Bloco 35: Introdção - Ciência da Computação :hourglass_flowing_sand:
 
 - [ ] 35-1: _Arquitetura de Computadores_
 - [ ] 35-2: _Arquitetura de redes_
