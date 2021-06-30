@@ -57,6 +57,11 @@
       function correctH1Text(indexValue, text) {
         document.getElementsByTagName('h1')[indexValue].innerText = text;
       }
+
+      function upperCaseTagP(tagValue, indexValue) {
+        document.getElementsByTagName('p')[indexValue].style.textTransform = 'uppercase';
+      }
+      upperCaseTagP('p', 0);
       
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
