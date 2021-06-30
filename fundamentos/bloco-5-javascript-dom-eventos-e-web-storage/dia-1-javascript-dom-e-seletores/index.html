@@ -42,10 +42,15 @@
       </section>
     </main>
     <script>
-      function changeTagText(tag, index, text) {
-        document.getElementsByTagName(tag)[index].innerText = text;
+      function changeTagText(tagValue, indexValue, text) {
+        document.getElementsByTagName(tagValue)[indexValue].innerText = text;
       }
       changeTagText('p', 0, 'Muito feliz e um Dev bomzão!');
+
+      function changeClassColor(classValue, indexValue, color) {
+        document.getElementsByClassName(classValue)[indexValue].style.backgroundColor = color;
+      }
+      changeClassColor('main-content', 0, 'rgb(76,164,109)');
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
