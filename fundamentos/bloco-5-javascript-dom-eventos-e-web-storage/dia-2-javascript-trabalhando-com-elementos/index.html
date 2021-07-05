@@ -106,12 +106,18 @@
 
       // 9. Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2;
       for (let index = 0; index < 3; index += 1) {
-        let elementH3 = document.createElement('h3');
+        const elementH3 = document.createElement('h3');
         mainContent.appendChild(elementH3);
       }
 
       // 10. Adicione a classe title na tag h1 criada;
       elementH1.className = 'title';
+
+      // 11. Adicione a classe description nas 3 tags h3 criadas;
+      const elementsH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+        elementsH3[index].className = 'description';
+      }
     </script>
   </body>
 </html>
