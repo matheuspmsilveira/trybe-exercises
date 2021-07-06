@@ -45,10 +45,24 @@ function createHolidayButton(buttonName) {
   const buttonsContainer = document.querySelector('.buttons-container');
   
   elementButton.innerHTML = buttonName;
-
   elementButton.id = 'btn-holiday';
-
   buttonsContainer.appendChild(elementButton);
 }
 
 createHolidayButton('Feriados');
+
+//Exercício 3
+function changeHolidayColor() {
+  const holidays = document.querySelectorAll('.holiday');
+  for (let index = 0; index < holidays.length; index += 1) {
+    const holidayDay = holidays[index];
+    if (holidayDay.style.backgroundColor === 'yellow') {
+      holidayDay.style.backgroundColor = 'rgb(238,238,238)';
+    } else {
+      holidayDay.style.backgroundColor = 'yellow';
+    }
+  }
+}
+
+const holidayButton = document.querySelector('#btn-holiday');
+holidayButton.addEventListener('click', changeHolidayColor);
