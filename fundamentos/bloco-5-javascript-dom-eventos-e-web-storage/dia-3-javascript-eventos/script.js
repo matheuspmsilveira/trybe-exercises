@@ -147,3 +147,18 @@ function legendAdd(cor) {
 }
 
 legendAdd('blue');
+
+//Exercício 9
+function selectedTask() {
+  let taskSlected = document.querySelectorAll('.task selected');
+  let tasks = document.querySelector('.task');
+  tasks.addEventListener('click', function taskSelected(event) {
+    if (taskSlected.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+}
+
+selectedTask();
