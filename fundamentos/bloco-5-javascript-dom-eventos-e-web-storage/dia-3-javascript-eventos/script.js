@@ -162,3 +162,23 @@ function selectedTask() {
 }
 
 selectedTask();
+
+// Exercísio 10
+function taskDay() {
+  let days = document.querySelector('#days');
+  let taskSelected = document.getElementsByClassName('task selected');
+  let divTask = document.querySelector('.task');
+  let taskBackgroudColor = divTask.style.backgroundColor;
+
+  days.addEventListener('click', function(event) {
+    let dayColor = event.target.style.color;
+    if (taskSelected.length > 0 && dayColor !== taskBackgroudColor) {
+      let eventColor = taskSelected[0].style.backgroundColor;
+      event.target.style.color = eventColor;
+    } else if (dayColor === taskBackgroudColor && taskSelected.length !== 0){
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+}
+
+taskDay();
