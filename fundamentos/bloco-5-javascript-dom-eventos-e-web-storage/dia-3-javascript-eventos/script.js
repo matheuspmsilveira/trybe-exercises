@@ -99,3 +99,28 @@ function changeFridayText(fridayDays) {
 
 let dezFridays = [4, 11, 18, 25]
 changeFridayText(dezFridays);
+
+//Exercício 6
+function daysZommOn() {
+  function daysZoom(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '500';
+  }
+  
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseover', daysZoom);
+}
+
+daysZommOn();
+
+function daysZoomOut() {
+  function daysReset(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  }
+  
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseout', daysReset);
+}
+
+daysZoomOut();
