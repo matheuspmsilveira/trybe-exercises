@@ -124,3 +124,14 @@ function daysZoomOut() {
 }
 
 daysZoomOut();
+
+//Exercício 7
+function createMyTasks(task) {
+  let elementSpan = document.createElement('span');
+  let spanParent = document.querySelector('.my-tasks');
+  
+  elementSpan.innerHTML = task;
+  spanParent.appendChild(elementSpan);
+}
+
+createMyTasks('Cozinhar');
