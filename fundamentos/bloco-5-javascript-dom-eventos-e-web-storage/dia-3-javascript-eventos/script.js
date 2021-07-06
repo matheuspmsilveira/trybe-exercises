@@ -55,7 +55,7 @@ createHolidayButton('Feriados');
 function changeHolidayColor() {
   const holidays = document.querySelectorAll('.holiday');
   for (let index = 0; index < holidays.length; index += 1) {
-    const holidayDay = holidays[index];
+    let holidayDay = holidays[index];
     if (holidayDay.style.backgroundColor === 'yellow') {
       holidayDay.style.backgroundColor = 'rgb(238,238,238)';
     } else {
@@ -66,3 +66,15 @@ function changeHolidayColor() {
 
 const holidayButton = document.querySelector('#btn-holiday');
 holidayButton.addEventListener('click', changeHolidayColor);
+
+//Ecercício 4
+function createFridayButton(buttonName) {
+  const elementFridayButton = document.createElement('button');
+  const buttonsContainer = document.querySelector('.buttons-container');
+  
+  elementFridayButton.innerHTML = buttonName;
+  elementFridayButton.id = 'btn-friday';
+  buttonsContainer.appendChild(elementFridayButton);
+}
+
+createFridayButton('Sexta-feira');
