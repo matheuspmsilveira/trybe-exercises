@@ -135,3 +135,15 @@ function createMyTasks(task) {
 }
 
 createMyTasks('Cozinhar');
+
+//Exercício 8
+function legendAdd(cor) {
+  let newDiv = document.createElement('div');
+  let divParent = document.querySelector('.my-tasks')
+  
+  newDiv.style.backgroundColor = cor;
+  newDiv.className = 'task';
+  divParent.appendChild(newDiv);
+}
+
+legendAdd('blue');
