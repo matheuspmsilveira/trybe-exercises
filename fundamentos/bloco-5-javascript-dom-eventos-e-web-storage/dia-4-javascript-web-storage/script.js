@@ -35,7 +35,7 @@ window.onload = function () {
 
   function changeFontFamily() {
     inputFontFamily.addEventListener('input', function(event) {
-      document.body.style.lineHeight = event.target.value;
+      document.body.style.fontFamily = event.target.value;
     })
   }
   changeFontFamily();
