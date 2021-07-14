@@ -16,3 +16,21 @@ function addStatesOptions () {
   }
 }
 addStatesOptions();
+
+const sendButton = document.querySelector('#send-forms');
+
+sendButton.addEventListener('click', function (event) {
+  event.preventDefault();
+});
+
+const clearButton = document.querySelector('#clear-button');
+
+clearButton.addEventListener('click', function () {
+  const inputs = document.querySelectorAll('input');
+  const textArea = document.querySelector('textarea');
+  for (let index = 0; index < inputs.length; index += 1) {
+    let inputElement = inputs[index];
+    inputElement.value = '';
+    textArea.value = '';
+  }
+});
