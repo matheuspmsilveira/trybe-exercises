@@ -23,12 +23,32 @@ input[type='radio'] {
   margin: 0px 5px;
 }
 
-.personal-data {
+.fieldset-personal-data {
   width: 60%;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 10px;
 }
 
 .divs-personal-data {
   margin: 10px 0px;
+}
+
+.fieldset-last-job{
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.divs-last-job {
+  margin: 10px 0px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+}
+
+input[type='date'] {
+  margin: 0px 5px;
 }
