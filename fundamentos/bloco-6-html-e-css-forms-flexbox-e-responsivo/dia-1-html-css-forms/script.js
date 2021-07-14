@@ -5,6 +5,13 @@ function addStatesOptions () {
     let element = brazilianStates[index];
     let newState = document.createElement('option');
     newState.innerHTML = element;
+    const stateAbbreviation = ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MS", "MT", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"]
+    for (let index2 = 0; index2 < stateAbbreviation.length; index2 += 1) {
+      if (index === index2) {
+        let abbreviation = stateAbbreviation[index];
+        newState.value = abbreviation;
+      }
+    }
     stateSelected.appendChild(newState);
   }
 }
