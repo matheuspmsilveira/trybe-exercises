@@ -4,57 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
   <body>
     <form action="" method="get">
-      <fieldset class="fieldset-personal-data">
+      <fieldset class="scheduler-border margin-custon">
         <legend>Dados Pessoais</legend>
-        <div class="divs-personal-data">
-          <label for="input-name">Nome: <input type="text" name="name" id="input-name" maxlength="40" required></label>
+        <div class="form-group">
+          <label for="input-name">Nome: </label>
+          <input class='form-control margin-custon' type ="text" name="name" id="input-name" maxlength="40" required>
         </div>
-        <div class="divs-personal-data">
-          <label for="input-email">Email: <input type="email" name="email" id="input-email" maxlength="50" required></label>
+        <div class="form-group">
+          <label for="input-email">Email: </label>
+          <input class='form-control margin-custon' type="email" name="email" id="input-email" maxlength="50" required>
         </div>
-        <div class="divs-personal-data">
-          <label for="input-cpf">CPF: <input type="text" name="cpf" id="input-cpf" maxlength="11" required></label>
+        <div class="form-group">
+          <label for="input-cpf">CPF: </label>
+          <input class='form-control margin-custon' type="text" name="cpf" id="input-cpf" maxlength="11" required>
         </div>
-        <div class="divs-personal-data">
-          <label for="input-address">Endereço: <input type="text" name="address" id="input-address" maxlength="200" required></label>
+        <div class="form-group">
+          <label for="input-address">Endereço: </label>
+          <input class='form-control margin-custon' type="text" name="address" id="input-address" maxlength="200" required>
         </div>
-        <div class="divs-personal-data">
-          <label for="input-city">Cidade: <input type="text" name="city" id="input-city" maxlength="28" required></label>
+        <div class="form-group">
+          <label for="input-city">Cidade: </label>
+          <input class='form-control margin-custon' type="text" name="city" id="input-city" maxlength="28" required>
         </div>
-        <div class="divs-personal-data">
-          <label for="select-state">Estado: 
-            <select name="state" id="select-state" required>
-            </select>
-          </label>
+        <div class="form-group">
+          <label for="select-state">Estado: </label>
+          <select class="form-control margin-custon" name="state" id="select-state" required>
+          </select>
         </div>
-        <div class="divs-personal-data" id="housing-type">Tipo de Moradia: 
-          <label for="radio-apartment"><input type="radio" name="housing-type" id="radio-apartment" value="apartamento" checked> Apartamento</label>
-          <label for="radio-house"><input type="radio" name="housing-type" id="radio-house" value="casa"> Casa</label>
+        <div class="form-group" id="housing-type">Tipo de Moradia: 
+          <input class="margin-custon" type="radio" name="housing-type" id="radio-apartment" value="apartamento" checked>
+          <label for="radio-apartment"> Apartamento</label>
+          <input class="margin-custon" type="radio" name="housing-type" id="radio-house" value="casa">
+          <label for="radio-house"> Casa</label>
         </div>
       </fieldset>
-      <fieldset class="fieldset-last-job">
+      <fieldset class="scheduler-border margin-custon">
         <legend>Último Emprego</legend>
-        <div class="divs-last-job">
-          <label for="textarea-resume">Resumo do currículo: <textarea name="resume" id="textarea-resume" maxlength="1000" required></textarea></label>
+        <div class="form-group">
+          <label for="textarea-resume">Resumo do currículo: </label>
+          <textarea class="form-control margin-custon" name="resume" id="textarea-resume" maxlength="1000" required></textarea>
         </div>
-        <div class="divs-last-job">
-          <label for="input-position">Cargo: <input type="text" name="jobPosition" id="input-position" maxlength="40" required></label>
+        <div class="form-group">
+          <label for="input-position">Cargo: </label>
+          <input class='form-control margin-custon' type="text" name="jobPosition" id="input-position" maxlength="40" required>
         </div>
-        <div class="divs-last-job">
-          <label for="input-job-description">Descrição do cargo: <input type="text" name="jobDescription" id="input-job-description" maxlength="500" required></label>
+        <div class="form-group">
+          <label for="input-job-description">Descrição do cargo: </label>
+          <input class='form-control margin-custon' type="text" name="jobDescription" id="input-job-description" maxlength="500" required>
         </div>
-        <div class="divs-last-job">
-          <label for="input-start-date">Data de início: <input type="date" name="startDate" id="input-start-date" required></label>
+        <div class="form-group">
+          <label for="input-start-date">Data de início: </label>
+          <input class='form-control margin-custon' type="date" name="startDate" id="input-start-date" required>
         </div>
       </fieldset>
       <div class="buttons">
-        <button type="submit" id="send-forms">Enviar Formulário</button>
-        <button id="clear-button">Limpar Formulário</button>
+        <button class="btn btn-success" type="submit" id="send-forms">Enviar Formulário</button>
+        <button class="btn btn-danger" id="clear-button">Limpar Formulário</button>
       </div>
     </form>
     <script src="script.js"></script>
