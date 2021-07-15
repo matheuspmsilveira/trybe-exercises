@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="get" class="ui form">
+      <h1 class="title">FORMULÁRIO</h1>
+      <div class="ui container fieldsets">
+        <h2>Dados Pessoais</h2>
+        <div class="ui container">
+          <label for="input-name">Nome: </label>
+          <input class='ui input' data-validate-field="name" type ="text" name="name" id="input-name" maxlength="40" required>
+        </div>
+        <div class="ui container">
+          <label for="input-email">Email: </label>
+          <input class='ui input' data-validate-field="email" type="email" name="email" id="input-email" maxlength="50" required>
+        </div>
+        <div class="ui container">
+          <label for="input-cpf">CPF: </label>
+          <input class='ui input' data-validate-field="cpf" type="text" name="cpf" id="input-cpf" maxlength="11" required>
+        </div>
+        <div class="ui container">
+          <label for="input-address">Endereço: </label>
+          <input class='ui input' data-validate-field="address" type="text" name="address" id="input-address" maxlength="200" required>
+        </div>
+        <div class="ui container">
+          <label for="input-city">Cidade: </label>
+          <input class='ui input' data-validate-field="city"  type="text" name="city" id="input-city" maxlength="28" required>
+        </div>
+        <div class="ui container">
+          <label for="select-state">Estado: </label>
+          <select class="ui input" data-validate-field="state" name="state" id="select-state" required>
+          </select>
+        </div>
+        <div class="ui container" id="housing-type">Tipo de Moradia: 
+          <input class="ui input housing" data-validate-field="radio" type="radio" name="housing-type" id="radio-apartment" value="apartamento" checked>
+          <label for="radio-apartment"> Apartamento</label>
+          <input class="ui input housing" data-validate-field="radio" type="radio" name="housing-type" id="radio-house" value="casa">
+          <label for="radio-house"> Casa</label>
+        </div>
+      </div>
+      <div class="ui container fieldsets">
+        <h2>Último Emprego</h2>
+        <div class="ui container">
+          <label for="textarea-resume">Resumo do currículo: </label>
+          <textarea class="ui input" data-validate-field="textarea" name="resume" id="textarea-resume" maxlength="1000" required></textarea>
+        </div>
+        <div class="ui container">
+          <label for="input-position">Cargo: </label>
+          <input class='ui input' data-validate-field="position" type="text" name="jobPosition" id="input-position" maxlength="40" required>
+        </div>
+        <div class="ui container">
+          <label for="input-job-description">Descrição do cargo: </label>
+          <input class='ui input' data-validate-field="description" type="text" name="jobDescription" id="input-job-description" maxlength="500" required>
+        </div>
+        <div class="ui container">
+          <label for="input-start-date">Data de início: </label>
+          <input class='ui input' data-validate-field="date" type="date" name="startDate" id="input-start-date" required>
+        </div>
+      </div>
+      <div class="ui container">
+        <button class="ui green button" type="submit" id="send-forms">Enviar Formulário</button>
+        <button class="ui red button" id="clear-button">Limpar Formulário</button>
+      </div>
+    </form>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
