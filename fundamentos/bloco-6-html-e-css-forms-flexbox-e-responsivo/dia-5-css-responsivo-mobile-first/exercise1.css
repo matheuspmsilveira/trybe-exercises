@@ -19,7 +19,7 @@ figure {
 
 @media screen and (min-width: 900px) {
   body {
-    background-color: grey;
+    background-color: lightgrey;
     margin: 10px;
   }
   
@@ -43,5 +43,36 @@ figure {
 
   figure {
     width: 45%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    width: 80%;
+    background-color: grey;
+    margin: 10px 10%;
+    font-size: 25px;
+  }
+  
+  h1 {
+    font-size: xxx-large;
+  }
+  
+  h2 {
+    font-size: xx-large;
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+  figure {
+    width: 30%;
   }
 }
