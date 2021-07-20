@@ -17,4 +17,31 @@ figure {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    background-color: grey;
+    margin: 10px;
+  }
+  
+  h1 {
+    font-size: xxx-large;
+  }
+  
+  h2 {
+    font-size: xx-large;
+    align-self: flex-start;
+    width: 100%;
+  }
 
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  figure {
+    width: 45%;
+  }
+}
