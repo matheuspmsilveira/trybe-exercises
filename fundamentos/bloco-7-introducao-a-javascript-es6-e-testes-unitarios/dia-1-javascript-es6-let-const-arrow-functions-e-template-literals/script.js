@@ -53,3 +53,11 @@ const longestWord = (text) => {
 }
 
 console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+// Parte 2.3
+const countButton = document.querySelector('#count-button');
+let counter = 0;
+countButton.addEventListener('click', () => {
+  const text = document.querySelector('#counter-text');
+  text.innerText = counter += 1;
+});
