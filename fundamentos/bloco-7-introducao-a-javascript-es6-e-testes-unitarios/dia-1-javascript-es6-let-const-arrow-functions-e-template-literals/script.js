@@ -35,3 +35,21 @@ const fatorial = (number) => {
 }
 
 console.log(fatorial(4));
+
+// Parte 2.2 
+const longestWord = (text) => {
+  let wordSplit = text.split(' ');
+  let maxLength = 0;
+  let result = '';
+
+  for (let index = 0; index < wordSplit.length; index += 1) {
+    if (wordSplit[index].length > maxLength) {
+      maxLength = wordSplit[index].length;
+      result = wordSplit[index];
+    }
+  }
+
+  return result;
+}
+
+console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
