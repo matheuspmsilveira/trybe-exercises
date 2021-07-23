@@ -48,10 +48,16 @@ allLessons.lesson3 = lesson3;
 
 //Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
 const numberOfStudents = (object) => {
-  let total = 0;
+  let result = 0;
   const objectArray = Object.keys(object);
   for (let index = 0; index < objectArray.length; index += 1) {
-    total += object[objectArray[index]].numeroEstudantes;
+    result += object[objectArray[index]].numeroEstudantes;
   }
-  return total;
+  return result;
+}
+
+//Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. 
+const getValueByNumber = (object, position) => {
+  const valueArray = Object.values(object);
+  return valueArray[position];
 }
