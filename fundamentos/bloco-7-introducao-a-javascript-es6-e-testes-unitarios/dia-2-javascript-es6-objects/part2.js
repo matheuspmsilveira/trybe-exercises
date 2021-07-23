@@ -34,3 +34,8 @@ function keysOfObject(object) {
 function objectLength(object) {
   return Object.keys(object).length;
 }
+
+//Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+function valuesOfObject(object) {
+  return Object.values(object);
+}
