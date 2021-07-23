@@ -29,3 +29,8 @@ addKeyValueInObject(lesson2, 'turno', 'manhã');
 function keysOfObject(object) {
   return Object.keys(object);
 }
+
+//Crie uma função para mostrar o tamanho de um objeto.
+function objectLength(object) {
+  return Object.keys(object).length;
+}
