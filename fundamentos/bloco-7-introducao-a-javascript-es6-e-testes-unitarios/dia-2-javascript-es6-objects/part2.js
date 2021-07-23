@@ -25,3 +25,7 @@ function addKeyValueInObject(object, key, value) {
 
 addKeyValueInObject(lesson2, 'turno', 'manhã');
 
+//Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+function keysOfObject(object) {
+  return Object.keys(object);
+}
