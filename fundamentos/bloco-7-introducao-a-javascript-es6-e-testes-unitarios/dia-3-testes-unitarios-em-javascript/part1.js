@@ -1,5 +1,4 @@
 //Parte 1 - exercicio 1
-
 const assert = require('assert');
 
 function sum(a, b) {
@@ -55,3 +54,18 @@ myRemoveWithoutCopy(myRemoveArray1, 3);
 assert.deepStrictEqual(myRemoveArray1, [1, 2, 4], 'array não se modificou');
 
 assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4], 'função retornar array errado');
+
+//Exercicio 4
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
+
+assert.strictEqual(myFizzBuzz(15), 'fizzbuzz');
+assert.strictEqual(myFizzBuzz(9), 'fizz');
+assert.strictEqual(myFizzBuzz(10), 'buzz');
+assert.strictEqual(myFizzBuzz(7), 7);
+assert.strictEqual(myFizzBuzz('oi'), false);
