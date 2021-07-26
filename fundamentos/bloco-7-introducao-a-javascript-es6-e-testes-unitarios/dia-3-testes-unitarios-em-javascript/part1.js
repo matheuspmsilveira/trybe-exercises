@@ -33,3 +33,25 @@ myRemove(myRemoveArray, 3);
 assert.deepStrictEqual(myRemoveArray, [1, 2, 3, 4], 'array se modificou');
 
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4], 'função retornar array errado');
+
+//Exercicio 3
+function myRemoveWithoutCopy(arr, item) {
+  for (let index = 0, len = arr.length; index < len; index += 1) {
+    if (arr[index] === item) {
+      arr.splice(index, 1);
+      index -= 1;
+      len -= 1;
+    }
+  }
+
+  return arr;
+}
+
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4], 'função não retorna o array [1, 2, 4]');
+assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4], 'função retorna array [1, 2, 3, 4]');
+
+const myRemoveArray1 = [1, 2, 3, 4];
+myRemoveWithoutCopy(myRemoveArray1, 3);
+assert.deepStrictEqual(myRemoveArray1, [1, 2, 4], 'array não se modificou');
+
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4], 'função retornar array errado');
