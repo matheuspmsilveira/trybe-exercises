@@ -43,3 +43,19 @@ const parameter1 = 'Dayane';
 const result1 = 'D1y2n3';
 
 assert.strictEqual(removeVowels(parameter1), result1);
+
+//Exercicio 3.3
+const greaterThanTen = (array) => {
+  let results = [];
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] > 10) {
+      results.push(array[index]);
+    }
+  }
+  return results;
+};
+
+const parameter2 = [4, 10, 32, 9, 21];
+const result2 = [32, 21];
+
+assert.deepStrictEqual(greaterThanTen(parameter2), result2);
