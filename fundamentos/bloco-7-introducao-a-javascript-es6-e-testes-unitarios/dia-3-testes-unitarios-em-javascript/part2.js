@@ -56,3 +56,31 @@ const output2 = sumAllNumbers(numbers);
 
 assert.strictEqual(typeof sumAllNumbers, 'function');
 assert.strictEqual(output2, expected2);
+
+//Exercicio 4.4
+const findTheNeedle = (words, word) => {
+  let result = -1;
+
+  for (let index = 0; index < words.length; index += 1) {
+    let element = words[index];
+
+    if (element === word) result = index;
+  }
+
+  return result;
+}
+
+let words1 = ['house', 'train', 'slide', 'needle', 'book'];
+let expected3 = 3;
+let output3 = findTheNeedle(words1, 'needle');
+assert.strictEqual(output3, expected3);
+
+words1 = ['plant', 'shelf', 'arrow', 'bird'];
+expected3 = 0;
+output3 = findTheNeedle(words1, 'plant');
+assert.strictEqual(output3, expected3);
+
+words1 = ['plant', 'shelf', 'arrow', 'bird'];
+expected3 = -1;
+output3 = findTheNeedle(words1, 'plat');
+assert.strictEqual(output3, expected3);
