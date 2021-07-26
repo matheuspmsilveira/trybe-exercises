@@ -37,3 +37,22 @@ const expected1 = [3, 6, 10, 5];
 assert.strictEqual(typeof wordLengths, 'function');
 const output1 = wordLengths(words);
 assert.deepStrictEqual(output1, expected1);
+
+//Exercicio 2.3
+const sumAllNumbers = (numbers) => {
+  let result = 0;
+
+  for (let index = 0; index < numbers.length; index += 1) {
+    let element = numbers[index];
+    result += element;
+  }
+
+  return result;
+}
+
+const numbers = [9, 23, 10, 3, 8];
+const expected2 = 53;
+const output2 = sumAllNumbers(numbers);
+
+assert.strictEqual(typeof sumAllNumbers, 'function');
+assert.strictEqual(output2, expected2);
