@@ -59,3 +59,18 @@ const parameter2 = [4, 10, 32, 9, 21];
 const result2 = [32, 21];
 
 assert.deepStrictEqual(greaterThanTen(parameter2), result2);
+
+//Exercicio 4.4
+function secondThirdSmallest(array) {
+  let results = []
+  array.sort(function (x, y) {
+      return x - y;
+  });
+  results = [array[1], array[2]];
+  return results;
+};
+
+const parameter3 = [4, 10, 32, 9, 21, 90, 5, 11, 8, 6];
+const result3 = [5, 6];
+
+assert.deepStrictEqual(secondThirdSmallest(parameter3), result3);
