@@ -23,7 +23,7 @@ const resultCheck = (number, randomNumber) => number === randomNumber;
 
 const lotteryResult = (number, func) => {
   const randomNumber = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
-  return func(number, randomNumber) ? 'Parabéns você ganhou' : 'Tente novamente';
+  return (func(number, randomNumber)) ? 'Parabéns você ganhou' : 'Tente novamente';
 };
 
 console.log(lotteryResult(3, resultCheck));
