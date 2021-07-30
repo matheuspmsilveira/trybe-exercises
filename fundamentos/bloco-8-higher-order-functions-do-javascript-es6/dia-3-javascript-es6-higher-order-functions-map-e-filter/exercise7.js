@@ -70,4 +70,12 @@ function authorWith3DotsOnName() {
   return arrFilter.name;
 }
 
+//Outra forma mais complexa e trabalhosa de fazer 
+/*function authorWith3DotsOnName() {
+  const arrFilter = books.filter((param) => param.author.name.split('.').length > 3);
+  let bookName;
+  arrFilter.forEach((param) => bookName = param.name);
+  return bookName;
+}*/
+
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
