@@ -135,7 +135,8 @@ const grades = [
 
 const studentAverage = students.map((e, idx) => ({
   name: e,
-  average: grades[idx].reduce((acc, curr) => acc + curr) / grades[idx].length,
+  average:
+    grades[idx].reduce((acc, curr) => acc + curr, 0) / grades[idx].length,
 }));
 
 const expected = [
