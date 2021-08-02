@@ -123,4 +123,25 @@ const containsA = names
   .reduce((acc, curr) => acc.concat(curr))
   .reduce((acc, curr) => (curr === 'a' ? acc + 1 : acc), 0);
 
-assert.deepStrictEqual(containsA(), 20);
+assert.deepStrictEqual(containsA, 20);
+
+//Exercise 6
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [
+  [9, 8, 10, 7, 5],
+  [10, 9, 9, 10, 8],
+  [10, 7, 10, 8, 9],
+];
+
+const studentAverage = students.map((e, idx) => ({
+  name: e,
+  average: grades[idx].reduce((acc, curr) => acc + curr) / grades[idx].length,
+}));
+
+const expected = [
+  { name: 'Pedro Henrique', average: 7.8 },
+  { name: 'Miguel', average: 9.2 },
+  { name: 'Maria Clara', average: 8.8 },
+];
+
+assert.deepStrictEqual(studentAverage, expected);
