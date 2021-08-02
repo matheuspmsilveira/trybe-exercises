@@ -64,7 +64,8 @@ const books = [
 ];
 
 //Exercise 2
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+const expectedResult =
+  'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.';
 
 function reduceNames() {
   const authorNames = books.map((e) => e.author.name);
@@ -85,7 +86,6 @@ function averageAge() {
 assert.strictEqual(averageAge(), expectedResult1);
 
 //Exercise 4
-
 const expectedResult2 = {
   id: 1,
   name: 'As Crônicas de Gelo e Fogo',
@@ -98,7 +98,29 @@ const expectedResult2 = {
 };
 
 function longestNamedBook() {
-  return books.reduce((acc, curr) => acc.name.length > curr.name.length ? acc : curr);
+  return books.reduce((acc, curr) =>
+    acc.name.length > curr.name.length ? acc : curr
+  );
 }
 
 assert.deepStrictEqual(longestNamedBook(), expectedResult2);
+
+//Exercise 5
+const names = [
+  'Aanemarie',
+  'Adervandes',
+  'Akifusa',
+  'Abegildo',
+  'Adicellia',
+  'Aladonata',
+  'Abeladerco',
+  'Adieidy',
+  'Alarucha',
+];
+
+const containsA = names
+  .map((e) => e.toLowerCase().split(''))
+  .reduce((acc, curr) => acc.concat(curr))
+  .reduce((acc, curr) => (curr === 'a' ? acc + 1 : acc), 0);
+
+assert.deepStrictEqual(containsA(), 20);
