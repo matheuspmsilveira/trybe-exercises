@@ -68,7 +68,7 @@ function smallerName() {
   books.forEach((param) => {
     if (param.name.length < nameBook.length || nameBook === '') {
       nameBook = param.name;
-    } 
+    }
   });
   return nameBook;
 }
