@@ -1,0 +1,28 @@
+import { Component } from 'react';
+import data from '../../data';
+import { Container } from './style';
+
+const pokemons = data.map(({ id, name, type, averageWeight, image }) => {
+  return (
+    <Container>
+      <div key={id}>
+        <p>{name}</p>
+        <p>{type}</p>
+        <p>
+          Average weight: {averageWeight.value} {averageWeight.measurementUnit}
+        </p>
+      </div>
+      <div>
+        <img src={image} alt='Foto do pokemon' />
+      </div>
+    </Container>
+  );
+});
+
+class Pokemon extends Component {
+  render() {
+    return <>{pokemons}</>;
+  }
+}
+
+export default Pokemon;
