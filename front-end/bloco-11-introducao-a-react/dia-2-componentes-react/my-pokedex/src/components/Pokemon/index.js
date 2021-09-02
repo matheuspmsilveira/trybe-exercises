@@ -6,8 +6,8 @@ const pokemons = data.map(({ id, name, type, averageWeight, image }) => {
   return (
     <Container>
       <div key={id}>
-        <p>{name}</p>
-        <p>{type}</p>
+        <p>Nome: {name}</p>
+        <p>Tipo: {type}</p>
         <p>
           Average weight: {averageWeight.value} {averageWeight.measurementUnit}
         </p>
